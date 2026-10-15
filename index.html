@@ -294,7 +294,7 @@ function draw(){var r=sec.getBoundingClientRect(),vh=window.innerHeight,p=(vh-r.
 window.addEventListener("scroll",draw,{passive:true});draw();}
 }
 })();</script>
-<script>(function(){var KEY="";var f=document.getElementById("joinForm");if(!f)return;var done=document.getElementById("joinDone");var note=document.getElementById("joinNote");
+<script>(function(){var KEY="c72de55c-7e4b-41c1-8c98-1c000ad2174f";var f=document.getElementById("joinForm");if(!f)return;var done=document.getElementById("joinDone");var note=document.getElementById("joinNote");
 function g(k){return f.elements[k]?String(f.elements[k].value).trim():""}
 function fallback(body,subj){location.href="mailto:ogustein@gmail.com?subject="+encodeURIComponent(subj)+"&body="+encodeURIComponent(body);f.hidden=true;done.hidden=false;done.querySelector("strong").textContent="¡Gracias! Tu solicitud está lista para enviar.";done.querySelector("p").textContent="Si tu aplicación de mail no se abrió, escribinos a ogustein@gmail.com. Nos estaremos contactando a la brevedad."}
 f.addEventListener("submit",function(e){e.preventDefault();var bad=["nombre","apellido","rubro","telefono","mail"].filter(function(k){return !g(k)});if(bad.length){f.elements[bad[0]].focus();note.textContent="Completá los campos obligatorios para enviar.";return}
